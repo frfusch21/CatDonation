@@ -1,0 +1,142 @@
+<html>
+	<head>
+		<title>X-Aid (Let's save Animals!)</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	
+	<body class="is-preload landing">
+		<div id="page-wrapper">
+
+			<!-- Header -->
+				<header id="header">
+					<h1 id="logo"><a href="index.html">X-AID</a></h1>
+					<nav id="nav">
+						<ul>
+							<li><a href="index.html">Home</a></li>
+							<li><a href="elements.html">About Us</a></li>
+							<li>
+								<a href="#">Our Services</a>
+								<ul>
+									<li><a href="CFS.html">Call for Stray!</a></li>
+									<li><a href="right-sidebar.html">Vet's courier</a></li>
+								</ul>
+							</li>
+							<li><a href="CFS_1.html" class="button primary">Donate!</a></li>
+						</ul>
+					</nav>
+				</header>
+
+			<!-- Banner -->
+				<section id="banner">
+					<div class="content">
+						<header>
+							<h2>Total Donation</h2><br>
+							<?php
+								$servername = "localhost";
+								$database = "userdata";
+								$username = "root";
+								$password = "";
+								
+								$connection = mysqli_connect($servername, $username, $password, $database);
+
+								if (!$connection)
+								{
+									die("Connection failed: ".mysqli_connect_error());
+								}
+								else{
+								}
+								
+								$sql = 'SELECT Donate FROM userdata';
+								$retval = mysqli_query($connection,$sql);
+   
+								if(! $retval ) {
+									die('Could not get data: ' . mysqli_error());
+								}
+								$i=0;
+								while($row = mysqli_fetch_array($retval, MYSQLI_ASSOC)) {
+									$data[$i]=$row;
+									$i++;
+								}
+								$total=0;
+								for($y=0;$y<$i;$y++)
+								{
+									$total+=$data[$y]['Donate'];
+								}
+								echo $total;
+								mysqli_close($connection);
+								
+							?>
+							<h2><?php echo $total;?></h2>
+							<h2>X-AID</h2>
+							<p>"Animals have hearts that feel, eyes that see,<br /> and families to care for. Just like you and me."<br />
+							-Anthony Douglas William</p>
+						</header>
+						<span class="image"><img src="images/pic01.jpg" alt="" /></span>
+					</div>
+					<a href="#two" class="goto-next scrolly">Next</a>
+				</section>
+
+			<!-- Two -->
+				<section id="two" class="spotlight style2 right">
+					<span class="image fit main"><img src="images/pic03.jpg" alt="" /></span>
+					<div class="content">
+						<header>
+							<h2>Who are we?</h2>
+							<p>We are a couple of people who cares about well beings of stray animals. 
+							Those animals are not lucky enough so we provide them support! And you can help too!</p>
+						</header>
+						<ul class="actions">
+							<li><a href="#" class="button">Learn More</a></li>
+						</ul>
+					</div>
+					<a href="#three" class="goto-next scrolly">Next</a>
+				</section>
+
+			<!-- Three -->
+				<section id="three" class="spotlight style3 left">
+					<span class="image fit main bottom"><img src="images/pic04.jpg" alt="" /></span>
+					<div class="content">
+						<header>
+						<h2>Why Donate Through us?</h2>
+						<p>We will make sure the donation will be used for the stray animals that needed our help the most.</p>
+						</header>
+						<ul class="actions">
+							<li><a href="#" class="button">Learn More</a></li>
+						</ul>
+					</div>
+					<a href="#footer" class="goto-next scrolly">Next</a>
+				</section>
+
+
+			<!-- Footer -->
+				<footer id="footer">
+					<ul class="icons">
+						<li><a href="#" class="icon alt fa-twitter"><span class="label">Twitter</span></a></li>
+						<li><a href="#" class="icon alt fa-facebook"><span class="label">Facebook</span></a></li>
+						<li><a href="#" class="icon alt fa-linkedin"><span class="label">LinkedIn</span></a></li>
+						<li><a href="#" class="icon alt fa-instagram"><span class="label">Instagram</span></a></li>
+						<li><a href="#" class="icon alt fa-github"><span class="label">GitHub</span></a></li>
+						<li><a href="#" class="icon alt fa-envelope"><span class="label">Email</span></a></li>
+					</ul>
+					<ul class="copyright">
+						<li>&copy; X-aid</li></li>
+					</ul>
+				</footer>
+
+		</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/jquery.dropotron.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>

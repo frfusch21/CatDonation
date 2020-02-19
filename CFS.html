@@ -1,0 +1,240 @@
+<html>
+	<head>
+		<title>X-Aid (Let's save Animals!)</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<style>
+		td {
+		font-size: 14pt;
+		}
+		
+		thead{
+		font-size: 22pt;
+		</style>
+	</head>
+	
+	<body class="is-preload landing">
+		<div id="page-wrapper">
+
+			<!-- Header -->
+				<header id="header">
+					<h1 id="logo"><a href="index.html">X-AID</a></h1>
+					<nav id="nav">
+						<ul>
+							<li><a href="index.html">Home</a></li>
+							<li><a href="elements.html">About Us</a></li>
+							<li>
+								<a href="#">Our Services</a>
+								<ul>
+									<li><a href="CFS.html">Call for Stray!</a></li>
+									<li><a href="right-sidebar.html">Vet's courier</a></li>
+								</ul>
+							</li>
+							<li><a href="#" class="button primary">Donate!</a></li>
+						</ul>
+					</nav>
+				</header>
+				
+			<!-- Main -->
+				<div id="main" class="wrapper style1">
+					<div class="container">
+						<header class="major">
+							<h2>Call for Stray!</h2>
+						</header>
+
+						<!-- Table -->
+							<section>
+								<h2>What are the donation for?</h2>
+								<h4>These are the treatments that will be received by the cats, these treatments will be administrated by our trusted doctors. All the animals that will be treated here are all strays from our area</h4>
+								<div class="table-wrapper">
+									<table class ="alt">
+										<thead>
+											<tr>
+												<th>Name</th>
+												<th>Description</th>
+												<th>Price</th>
+											</tr>
+										</thead>
+										</thead>
+										<tbody>
+											<tr>
+												<td>Fellocel3 Vaccine</td>
+												<td>First Vaccination for cats</td>
+												<td>Rp 180.000</td>
+											</tr>
+											<tr>
+												<td>Felocell4 Vaccine</td>
+												<td>Regular Vaccination for cats.</td>
+												<td>Rp 250.000</td>
+											</tr>
+											<tr>
+												<td>Vitamin Injection</td>
+												<td>Shot of vitamins for cats.</td>
+												<td>Rp  60.000</td>
+											</tr>
+											<tr>
+												<td>Immunomodulator</td>
+												<td>Multivitamin and supplements for cats.</td>
+												<td>Rp  20.000</td>
+											</tr>
+											<tr>
+												<td>Antibiotics</td>
+												<td>Treatment for Germs and Fungus.</td>
+												<td>Rp  80.000</td>
+											</tr>
+										</tbody>
+									</table>
+									
+								<!-- Table 2 -->	
+								</div>
+								<br>
+								<br>
+								<h2>Everyday's Caretaker</h2>
+								<div class="table-wrapper">
+									<table class="alt">
+										<thead>
+											<tr>
+												<th>Name</th>
+												<th>Description</th>
+												<th>Price</th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr>
+												<td>Dry Food for Kittens</td>
+												<td>Nutrional Dry Food for Kittens Per 2 Weeks Per 800 gr.</td>
+												<td>Rp  57.000</td>
+											</tr>
+											<tr>
+												<td>Dry Food for Adult Cats</td>
+												<td>Nutritional Dry Food for Adult Cats Per Week Per Kg.</td>
+												<td>Rp  50.000</td>
+											</tr>
+											<tr>
+												<td>Wet Food for Kittens</td>
+												<td>Nutritional Wet food for kittens Per Can.</td>
+												<td>Rp  40.000</td>
+											</tr>
+											<tr>
+												<td>Wet Food for Adult Cats</td>
+												<td>Nutritonal Wet food for Cats Per Can.</td>
+												<td>Rp  35.000</td>
+											</tr>
+											<tr>
+												<td>Fish Oil</td>
+												<td>Vitamins to kep the cats healthy Per Bottle.</td>
+												<td>Rp  40.000</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+							</section>
+
+						<!-- Form -->
+							<section>
+							<br>
+							<br>
+								<h3>Form</h3>
+								<form method="post" action="Uploader.php" enctype="multipart/form-data">
+									<div class="row gtr-uniform gtr-50">
+										<div class="col-6 col-12-xsmall">
+											<input type="text" name="name" id="name" value="" placeholder="Bank Account Name" />
+										</div>			
+										<div class="col-12">
+											<select name="category" id="category">
+												<option value="">- Transfer Method -</option>
+												<option value="1">ATM Transfer</option>
+												<option value="2">M-Banking</option>
+												<option value="3">Internet Banking</option>
+												<option value="4">PAYPAL</option>
+											</select>
+										</div>
+                                                                                <div class="col-6 col-12-xsmall">
+											<input type="text" name="donate" id="donate" value="" placeholder="donate" />
+										</div>
+										<div class="col-6 col-12-xsmall">
+											<input type="email" name="email" id="email" value="" placeholder="Email" />
+										</div>
+										<br>
+										<div class="col-6 col-12-xsmall">
+										<h3>Upload the Payment Proof</h3>
+										<input type="file" name="myfile" id="myFile">
+										</div>
+										<br>
+										<div class="col-6 col-12-medium">
+											<input type="checkbox" id="human" name="human" checked>
+											<label for="human">I am a human and not a robot</label>
+										</div>
+										<div class="col-12">
+											<textarea name="message" id="message" placeholder="Enter your message" rows="6"></textarea>
+										</div>
+										<div class="col-12">
+											<ul class="actions">
+												<li><input type="submit" name="send" value="Send" class="primary" /></li>
+												<li><input type="reset" value="Reset" /></li>
+											</ul>
+										</div>
+									</div>
+								</form>
+							</section>
+
+						<!-- Image -->
+							<section>
+								<h3>Our Cat's Shelter</h3>
+								<div class="box alt">
+									<div class="row gtr-50 gtr-uniform">
+										<div class="col-4 col-6-xsmall"><span class="image fit"><img src="images/pic02.jpg" alt="" /></span></div>
+										<div class="col-4 col-6-xsmall"><span class="image fit"><img src="images/pic03.jpg" alt="" /></span></div>
+										<div class="col-4 col-6-xsmall"><span class="image fit"><img src="images/pic04.jpg" alt="" /></span></div>
+										<div class="col-4 col-6-xsmall"><span class="image fit"><img src="images/pic05.jpg" alt="" /></span></div>
+										<div class="col-4 col-6-xsmall"><span class="image fit"><img src="images/pic06.jpg" alt="" /></span></div>
+										<div class="col-4 col-6-xsmall"><span class="image fit"><img src="images/pic07.jpg" alt="" /></span></div>
+										<div class="col-4 col-6-xsmall"><span class="image fit"><img src="images/pic08.jpg" alt="" /></span></div>
+										<div class="col-4 col-6-xsmall"><span class="image fit"><img src="images/pic04.jpg" alt="" /></span></div>
+										<div class="col-4 col-6-xsmall"><span class="image fit"><img src="images/pic02.jpg" alt="" /></span></div>
+										<div class="col-4 col-6-xsmall"><span class="image fit"><img src="images/pic02.jpg" alt="" /></span></div>
+										<div class="col-4 col-6-xsmall"><span class="image fit"><img src="images/pic03.jpg" alt="" /></span></div>
+										<div class="col-4 col-6-xsmall"><span class="image fit"><img src="images/pic04.jpg" alt="" /></span></div>
+									</div>
+								</div>
+							</section>
+					</div>
+				</div>
+
+			<!-- Footer -->
+				<footer id="footer">
+					<ul class="icons">
+						<li><a href="#" class="icon alt fa-twitter"><span class="label">Twitter</span></a></li>
+						<li><a href="#" class="icon alt fa-facebook"><span class="label">Facebook</span></a></li>
+						<li><a href="#" class="icon alt fa-linkedin"><span class="label">LinkedIn</span></a></li>
+						<li><a href="#" class="icon alt fa-instagram"><span class="label">Instagram</span></a></li>
+						<li><a href="#" class="icon alt fa-github"><span class="label">GitHub</span></a></li>
+						<li><a href="#" class="icon alt fa-envelope"><span class="label">Email</span></a></li>
+					</ul>
+					<ul class="copyright">
+						<li>&copy; X-Aid. All rights reserved.</li>
+					</ul>
+				</footer>
+
+		</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/jquery.dropotron.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+			<script>
+			function myFunction() {
+			var x = document.getElementById("myFile");
+			}
+</script>
+
+
+	</body>
+</html>
